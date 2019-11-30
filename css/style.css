@@ -820,7 +820,7 @@ h3 {
 }
 
 .slider_bg_1 {
-    background-image: url(../img/banner/butterflies.jpg)
+    background-image: url(../img/banner/butterflies2.jpg)
 }
 
 .slider_area {
@@ -1651,7 +1651,7 @@ h3 {
 }
 
 .volunter_bg_1 {
-    background-image: url(../img/volunteers/bg.png)
+    background-image: url(../img/banner/breaksilence.jpeg)
 }
 
 .become_volunter {
@@ -1667,8 +1667,23 @@ h3 {
 }
 
 .become_volunter .volunter_text {
-    background: #4B0082;
+    background: transparent;/*#4B0082;*/
     padding: 68px 95px
+}
+
+.donatebtn {
+    background: #4B0082;
+}
+
+.donatebtntop {
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0;
 }
 
 @media (max-width: 767px) {
