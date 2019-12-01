@@ -103,19 +103,19 @@ label {
 }
 
 *::-moz-selection {
-    background: #444;
+    background: darkorchid;
     color: #fff;
     text-shadow: none
 }
 
 ::-moz-selection {
-    background: #444;
+    background: darkorchid;
     color: #fff;
     text-shadow: none
 }
 
 ::selection {
-    background: #444;
+    background: darkorchid;
     color: #fff;
     text-shadow: none
 }
@@ -668,14 +668,14 @@ h3 {
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .header-area .main-header-area .main-menu ul li a {
-        padding: 35px 8px 35px 8px;
+        padding: 35px 16px 35px 16px;
         font-size: 15px
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
     .header-area .main-header-area .main-menu ul li a {
-        padding: 35px 8px 35px 8px
+        padding: 35px 16px 35px 16px
     }
 }
 
@@ -696,7 +696,7 @@ h3 {
 }
 
 .header-area .main-header-area .main-menu ul li a.active {
-    color: lightgrey;
+    color: darkgrey;
 }
 
 .header-area .main-header-area .main-menu ul li a:hover {
@@ -1680,8 +1680,7 @@ h3 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: -20px;
     padding-bottom: 0;
     top: 0;
 }
