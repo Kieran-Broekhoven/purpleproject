@@ -1384,7 +1384,7 @@ h3 {
 }
 
 .help_area {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 120px;
     position: relative;
     z-index: 8
@@ -2030,7 +2030,7 @@ h3 {
 .breadcam_area::after {
     position: absolute;
     content: "";
-    background: #fff;
+    background: #fff;/*transparent;*/
     width: 100%;
     height: 115px;
     left: 0;
