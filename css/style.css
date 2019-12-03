@@ -1825,6 +1825,7 @@ h3 {
 }
 
 .footer {
+    display: none;
     background: #4B0082
 }
 
@@ -2185,7 +2186,7 @@ h3 {
 }
 
 .contact-section {
-    padding: 130px 0 100px
+    padding: 20px 0 100px
 }
 
 @media (max-width: 991px) {
@@ -2213,7 +2214,7 @@ h3 {
 
 .sample-text-area {
     background: #fff;
-    padding: 100px 0 70px 0
+    padding: 20px 0 70px 0
 }
 
 .text-heading {
@@ -2647,7 +2648,7 @@ h6 {
 .unordered-list li {
     position: relative;
     padding-left: 30px;
-    line-height: 1.82em !important
+    line-height: 1.82em !important;
 }
 
 .unordered-list li:before {
@@ -2655,7 +2656,7 @@ h6 {
     position: absolute;
     width: 14px;
     height: 14px;
-    border: 3px solid #ff5e13;
+    border: 3px solid #4B0082;
     background: #fff;
     top: 4px;
     left: 0;
