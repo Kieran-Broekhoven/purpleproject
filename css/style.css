@@ -1786,7 +1786,7 @@ h3 {
     font-size: 46px;
     line-height: 56px;
     color: #4B0082;
-    margin-top: 75px;
+    margin-top: 200px;
     margin-bottom: 25px
 }
 
@@ -1995,7 +1995,9 @@ h3 {
 }
 
 .bradcam_bg {
-    background-image: url(../img/banner/butterflies.jpg)
+    background-image: url(../img/banner/butterflies.jpg);
+    /* background-color: #4B0082; */
+    /* background-blend-mode: multiply; */
 }
 
 .breadcam_area {
@@ -2003,6 +2005,7 @@ h3 {
     background-size: cover;
     background-position: center center;
     position: relative;
+    z-index: -2;
 }
 
 @media (max-width: 767px) {
@@ -2025,7 +2028,8 @@ h3 {
     height: 100%;
     left: 0;
     top: 0;
-    opacity: .8
+    opacity: .8;
+    z-index: -3;
 }
 
 .breadcam_area::after {
@@ -2033,13 +2037,13 @@ h3 {
     content: "";
     background: #fff;/*transparent;*/
     width: 100%;
-    height: 50px;
+    height: 115px;
     left: 0;
-    bottom: -25px;
+    bottom: -60px;
     -webkit-transform: skewY(2deg);
     -ms-transform: skewY(2deg);
     transform: skewY(2deg);
-    z-index: 99
+    z-index: -1
 }
 
 .breadcam_area .breadcam_text h3 {
