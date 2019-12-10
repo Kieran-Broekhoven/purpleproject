@@ -65,8 +65,7 @@ h3,
 h4,
 h5 {
     font-family: 'Playfair Display', serif;
-    color: #4B0082
-    /* color: white; */
+    color: #4B0082;
 }
 
 h1 a,
@@ -384,8 +383,8 @@ h3 {
     font-size: 46px;
     line-height: 56px;
     font-weight: 400;
-    /* color: #4B0082 */
-    color: white;
+    color: #4B0082
+    /* color: white; */
 }
 
 @media (max-width: 767px) {
@@ -661,6 +660,11 @@ h3 {
 .wishlist-header {
     line-height: 3;
 }
+@media only screen and (max-width: 768px) {
+    .wishlist-header {
+        line-height: 2.5 !important;
+    }
+}
 @media only screen and (min-width: 768px) {
     nav {
         background: transparent;
@@ -674,6 +678,11 @@ h3 {
     .nav-link:not(.active) {
         color: white;
     }
+    .wishlist-header {
+        line-height: 1.0 !important;
+        color: red;
+    }
+
 }
 .active {
     color: darkgrey !important;
@@ -2040,7 +2049,7 @@ h3 {
     background-size: cover;
     background-position: center center;
     position: relative;
-    z-index: 5;
+    z-index: -2;
     color: white;
 }
 
@@ -2065,7 +2074,7 @@ h3 {
     left: 0;
     top: 0;
     opacity: .8;
-    z-index: 4;
+    z-index: -3;
 }
 
 .breadcam_area::after {
@@ -2079,7 +2088,7 @@ h3 {
     -webkit-transform: skewY(2deg);
     -ms-transform: skewY(2deg);
     transform: skewY(2deg);
-    z-index: 6
+    z-index: -1
 }
 
 .breadcam_area .breadcam_text h3 {
@@ -2257,12 +2266,12 @@ h3 {
 
 .sample-text-area {
     background: #fff;
-    padding: 20px 0 0 0
+    padding: 20px 0 0 0;
 }
 
 .text-heading {
     margin-bottom: 30px;
-    font-size: 24px
+    font-size: 24px;
 }
 
 b,
