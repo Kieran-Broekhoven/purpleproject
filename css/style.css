@@ -656,7 +656,7 @@ h3 {
     padding: 0 0 0 5px;
 }
 .wishlist-header {
-    line-height: 1.5;
+    line-height: 3;
 }
 @media only screen and (min-width: 768px) {
     nav {
@@ -2033,7 +2033,7 @@ h3 {
     background-size: cover;
     background-position: center center;
     position: relative;
-    z-index: -2;
+    z-index: 5;
 }
 
 @media (max-width: 767px) {
@@ -2057,7 +2057,7 @@ h3 {
     left: 0;
     top: 0;
     opacity: .8;
-    z-index: -3;
+    z-index: 4;
 }
 
 .breadcam_area::after {
@@ -2071,7 +2071,7 @@ h3 {
     -webkit-transform: skewY(2deg);
     -ms-transform: skewY(2deg);
     transform: skewY(2deg);
-    z-index: -1
+    z-index: 6
 }
 
 .breadcam_area .breadcam_text h3 {
