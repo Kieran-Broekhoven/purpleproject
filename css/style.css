@@ -645,6 +645,34 @@ h3 {
     }
 }
 
+.mynavbar {
+    background: #4B0082;
+}
+.navbar-collapse {
+    background-color: #4B0082;
+    color: #4B0082;
+}
+.nav-item {
+    padding: 0 0 0 5px;
+}
+.wishlist-header {
+    line-height: 1.5;
+}
+@media only screen and (min-width: 768px) {
+    nav {
+        background: transparent;
+    }
+    .nav-item {
+        padding: 35px 23px 35px 23px;
+    }
+    .nav-link:not(.active) {
+        color: white;
+    }
+}
+.active {
+    color: darkgrey !important;
+}
+
 .header-area .main-header-area .main-menu {
     text-align: center;
     padding: 12px 0
