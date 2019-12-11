@@ -298,7 +298,7 @@ h3 {
 }
 
 .boxed-btn2 {
-    background: #A70000;
+    background: #4B0082;
     color: #fff;
     display: inline-block;
     padding: 17px 50px 16px 50px;
@@ -319,7 +319,7 @@ h3 {
 }
 
 .boxed_btn3 {
-    background: #A70000;
+    background: #4B0082;
     padding: 9px 26px;
     margin-bottom: 0;
     font-size: 20px;
@@ -333,7 +333,7 @@ h3 {
 
 .boxed_btn3:hover {
     background: #FAF0F0;
-    color: #A70000
+    color: #4B0082
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -344,20 +344,20 @@ h3 {
 
 .boxed-btn4 {
     background: transparent;
-    color: #A70000;
+    color: #4B0082;
     display: inline-block;
     padding: 12px 44px;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 40px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #A70000;
+    border: 1px solid #4B0082;
     text-align: center;
     text-transform: capitalize
 }
 
 .boxed-btn4:hover {
-    background: #A70000;
+    background: #4B0082;
     color: #fff !important;
     border: 1px solid transparent
 }
@@ -371,7 +371,7 @@ h3 {
 }
 
 .section_title span {
-    color: #A70000;
+    color: #4B0082;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -783,7 +783,7 @@ h3 {
 }
 
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-    color: #A70000
+    color: #4B0082
 }
 
 .header-area .main-header-area .main-menu ul li:hover>.submenu {
@@ -1088,7 +1088,7 @@ h3 {
 }
 
 .causes_area .causes_info .target_rais_area .single_raise h4 {
-    color: #A70000;
+    color: #4B0082;
     background: #FAF0F0;
     padding: 12px 26px;
     margin-bottom: 0;
@@ -1142,7 +1142,7 @@ h3 {
     justify-content: center;
     color: #fff;
     text-align: center;
-    background-color: #A70000;
+    background-color: #4B0082;
     transition: width .6s ease;
     border-radius: 0;
     position: relative;
@@ -1154,7 +1154,7 @@ h3 {
     right: 0;
     width: 60px;
     height: 60px;
-    background: #A70000;
+    background: #4B0082;
     border-radius: 50%;
     font-size: 16px;
     font-weight: bold;
@@ -1232,7 +1232,7 @@ h3 {
 }
 
 .about_area .about_thumb .served_over {
-    background: #A70000;
+    background: #4B0082;
     position: absolute;
     top: 50%;
     display: inline-block;
@@ -1399,7 +1399,7 @@ h3 {
     height: 98px;
     background: #FAF0F0;
     font-size: 45px;
-    color: #A70000;
+    color: #4B0082;
     line-height: 98px;
     border-radius: 50%;
     margin: auto;
@@ -1422,7 +1422,7 @@ h3 {
 }
 
 .servce_area .single_serve:hover .serve_icon {
-    background: #A70000;
+    background: #4B0082;
     color: #fff
 }
 
@@ -1477,7 +1477,7 @@ h3 {
 .help_area .help_info a {
     font-size: 16px;
     font-weight: 400;
-    color: #A70000
+    color: #4B0082
 }
 
 .help_area .single_help_wrap {
@@ -1546,7 +1546,7 @@ h3 {
 .help_area .single_help_wrap .donate_amount .single_amount h3 {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #A70000
+    color: #4B0082
 }
 
 .help_area .single_help_wrap a {
@@ -1670,7 +1670,7 @@ h3 {
 }
 
 .volunteers_area .single_volunteer .thumb .social_links ul li a:hover {
-    color: #A70000
+    color: #4B0082
 }
 
 .volunteers_area .single_volunteer .author_name h3 {
@@ -1694,8 +1694,7 @@ h3 {
 }
 
 .volunter_bg_1 {
-    background-image: url(../img/fundingsafety.png);
-    background-repeat: round;
+    background-image: url(../img/handsbanner.jpg);
 }
 
 .become_volunter {
@@ -1712,7 +1711,8 @@ h3 {
 
 .become_volunter .volunter_text {
     background: transparent;/*#4B0082;*/
-    padding: 68px 95px
+    padding: 68px 95px;
+    font-size: 48px;
 }
 
 .donatebtn {
@@ -1776,12 +1776,13 @@ h3 {
 
 .become_volunter .volunter_text a.boxed-btn4 {
     color: #fff;
-    border: 1px solid #fff
+    border: 1px solid #fff;
+    background-color: #4B0082
 }
 
 .become_volunter .volunter_text a.boxed-btn4:hover {
     background: #fff;
-    color: #A70000 !important
+    color: #4B0082 !important
 }
 
 .about_page {
@@ -1925,8 +1926,8 @@ h3 {
 }
 
 .footer .footer_top .footer_widget p.footer_text a.domain:hover {
-    color: #A70000;
-    border-bottom: 1px solid #A70000
+    color: #4B0082;
+    border-bottom: 1px solid #4B0082
 }
 
 .footer .footer_top .footer_widget p.footer_text.doanar a {
@@ -1935,8 +1936,8 @@ h3 {
 }
 
 .footer .footer_top .footer_widget p.footer_text.doanar a:hover {
-    color: #A70000;
-    border-bottom: 1px solid #A70000
+    color: #4B0082;
+    border-bottom: 1px solid #4B0082
 }
 
 .footer .footer_top .footer_widget p.footer_text.doanar a.first {
@@ -1950,7 +1951,7 @@ h3 {
 }
 
 .footer .footer_top .footer_widget ul li a:hover {
-    color: #A70000
+    color: #4B0082
 }
 
 .footer .footer_top .footer_widget .newsletter_form {
@@ -1981,7 +1982,7 @@ h3 {
     border: none;
     font-size: 14px;
     color: #fff;
-    background: #A70000;
+    background: #4B0082;
     padding: 10px;
     padding: 0 22px;
     cursor: pointer
@@ -2015,7 +2016,7 @@ h3 {
 }
 
 .footer .copy-right_text .copy_right a {
-    color: #A70000
+    color: #4B0082
 }
 
 @media (max-width: 767px) {
