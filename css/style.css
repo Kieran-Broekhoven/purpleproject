@@ -1702,6 +1702,7 @@ h3 {
 
 .volunter_bg_1 {
     background-image: url(../img/handsbanner.jpg);
+    background-repeat: round;
 }
 
 .become_volunter {
@@ -1718,7 +1719,7 @@ h3 {
 
 .become_volunter .volunter_text {
     background: transparent;/*#4B0082;*/
-    padding: 68px 95px;
+    /* padding: 68px 95px; */
     font-size: 48px;
 }
 
