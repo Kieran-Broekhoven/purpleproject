@@ -665,7 +665,10 @@ h3 {
         line-height: 2.5 !important;
     }
 }
-@media only screen and (min-width: 768px) {
+/* .navbar-toggler-icon {
+    float: right;
+} */
+@media only screen and (min-width: 992px) {
     nav {
         background: transparent;
     }
@@ -682,8 +685,11 @@ h3 {
         line-height: 1.0 !important;
         color: red;
     }
-
+    .boxed-btn {
+        display: inline-block;
+    }
 }
+
 .active {
     color: darkgrey !important;
 }
