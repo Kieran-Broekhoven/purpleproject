@@ -2142,7 +2142,16 @@ h3 {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s
+    transition: all 0.3s;
+    background-color: #4B0082;
+}
+
+.dropdown .dropdown-menu a {
+    color: white
+}
+
+.dropdown .dropdown-menu a:hover {
+    color: #4B0082
 }
 
 .contact-info {
