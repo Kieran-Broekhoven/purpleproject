@@ -41,6 +41,10 @@ button:focus {
     outline: none
 }
 
+p a, h1 a, h2 a, h3 a, h4 a, h5 a {
+    font-weight: bold;
+}
+
 a:focus {
     color: #fff;
     text-decoration: none
@@ -676,7 +680,7 @@ h3 {
         background: transparent
     }
     .nav-item {
-        padding: 35px 23px 35px 23px;
+        padding: 35px 23px 35px 0px;
     }
     .nav-link:not(.active) {
         color: white;
@@ -4204,6 +4208,12 @@ h6 {
 .single-post-area .social-links li {
     display: inline-block;
     margin-bottom: 10px
+}
+
+.fa-facebook-square {
+    color: #cccccc; 
+    font-size: 28px;
+ 
 }
 
 .single-post-area .social-links li a {
