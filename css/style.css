@@ -651,6 +651,11 @@ h3 {
     }
 }
 
+.navbar-toggler {
+    color: red !important;
+    border-color: white !important;
+    font-weight: bold;
+}
 .mynavbar {
     background: #4B0082;
 }
