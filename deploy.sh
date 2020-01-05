@@ -1,3 +1,4 @@
+set -e
 $(aws2 ecr get-login --no-include-email --region us-west-1)
 docker build -t purpleproject .
 docker tag purpleproject:latest 586981323390.dkr.ecr.us-east-2.amazonaws.com/purpleproject:latest
