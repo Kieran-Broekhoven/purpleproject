@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    {% load static %}
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>The Purple Project</title>
     <meta name="description" content="">
@@ -10,9 +11,9 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="js/DataTables/datatables.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'js/DataTables/datatables.min.css' %}"/>
 </head>
 
 <body>
@@ -79,16 +80,16 @@
         </div>
     </div>
  -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/DataTables/datatables.min.js"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/DataTables/datatables.min.js' %}"></script>
 
 
     <script>
     $( document ).ready(function() {
-        $("#headerArea").load('header.html');
+        $("#headerArea").load('{% static "header.html" %}');
         let table = $("#wishlistTable tbody");
         $.ajax({
             url: '/api/wishlist',
