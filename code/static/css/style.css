@@ -890,7 +890,7 @@ h3 {
 }
 
 .slider_area {
-    max-height: 700px;
+    height: 1000px;
     position: relative;
     z-index: 8;
     position: relative;

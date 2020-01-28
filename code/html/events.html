@@ -2,6 +2,7 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>The Purple Project</title>
@@ -10,8 +11,8 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                         <br><br>
                         We encourage teams to donate items for shelters leading up to the event. If you’re
                         interested in donating any items to the event in addition to your ticket cost, you can
-                        order items on the <a href="wishlist.html">wishlist</a>
+                        order items on the <a href="/wishlist">wishlist</a>
                         <br><br>
                         We will be running this event early in the new year, so stay tuned for the exact date!
                         </p>
@@ -61,12 +62,13 @@
         </div>
     </div>
 
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+ 
     <script>
     $( document ).ready(function() {
-        $("#headerArea").load('header.html');
+        $("#headerArea").load("{% static 'header.html' %}");
     });    
     </script>
 
