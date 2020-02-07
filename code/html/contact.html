@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png"> -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}">
@@ -72,7 +73,7 @@
                 </div>
                 <div class="col-lg-3 offset-lg-1">
                     <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <span class="contact-info__icon"><i class="fa fa-home"></i></span>
                         <div class="media-body">
                             <h3>3911 Cleveland Avenue</h3>
                             <p>P.O. Box 34173</p>
@@ -81,23 +82,38 @@
                         </div>
                     </div>
                     <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
                         <div class="media-body">
                             <h3>(619) 724 2339</h3>
                         </div>
                     </div>
                     <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <a href="mailto: info@purple-project.org"><span class="contact-info__icon"><i class="fa fa-envelope"></i></span></a>
                         <div class="media-body">
                             <h3>info@purple-project.org</h3>
                             <p>Send us an email!</p>
                         </div>
                     </div>
                     <div class="media contact-info">
-                        <a href="https://www.facebook.com/wearethepurpleproject/" target="none"><span class="contact-info__icon"><i class="fa fa-facebook-square"></i></span></a>
+                        <!-- <img class="icon" src="{% static 'img/icons/facebook.png' %}"> -->
+                        <span class="contact-info__icon">
+                            <a href="https://www.facebook.com/wearethepurpleproject/" target="none">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </span>
                         <div class="media-body">
-                            <h3>Find us on Facebook</h3>
-                        </div>
+                            <h3>@wearethepurpleproject</h3>
+                        </div> 
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon">
+                            <a href="https://www.instagram.com/thepurpleproject.sd/" target="none">
+                            <i class="fa fa-instagram"></i>
+                            </a>
+                        </span>
+                        <div class="media-body">
+                            <h3>@thepurpleproject.sd</h3>
+                        </div> 
                     </div>
                 </div>
             </div>
