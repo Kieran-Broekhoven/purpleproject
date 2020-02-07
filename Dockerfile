@@ -8,15 +8,14 @@ RUN apt-get -y update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y python3-pip python3-dev uwsgi \
     uwsgi-plugin-python3 libpcre3-dev libssl-dev python3-mysqldb mailutils build-essential
 
-RUN python3.7 -m pip install --upgrade pip
-RUN python3.7 -m pip install --upgrade flask pprint django requests beautifulsoup4 brow pymysql \
+RUN python3.8 -m pip install --upgrade pip
+RUN python3.8 -m pip install --upgrade flask pprint django requests beautifulsoup4 brow pymysql \
     mysqlclient uWSGI Werkzeug uwsgi pyopenssl mysqlclient
 
 # COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY code/api/ /api
-RUN python3.7 /api/manage.py collectstatic --noinput
+RUN python3.8 /api/manage.py collectstatic --noinput
 ADD code/static /var/www/static/
-RUN echo "TEST"
 # RUN chmod 777 /api/db.sqlite3
 COPY code/html/ /var/www/html/
 COPY code/html/ /usr/local/apache2/htdocs/

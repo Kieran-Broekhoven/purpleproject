@@ -14,7 +14,6 @@ def get_wishlist(wishlist_id):
         s = divider + s.split(divider)[-1]
         s = BeautifulSoup(s, "html.parser")
         divs = s.findAll("div", {"id": re.compile('^itemImage_')})
-        print("Len: %s" % len(divs))
         for div in divs:
             img = div.find("img")['src']
             span = div.find('a')['title']

@@ -72,8 +72,6 @@ def wishlist(request):
 
 
 def htmlPage(request, file):
-    print("User: %s" % os.environ.get('gmail_user'))
-    print("Debug: %s" % os.environ.get('DEBUG'))
     if not (file.endswith('.js') or file.endswith('.css') or file.endswith('.img') or file.endswith('.ico')):
         file += '.html'
     try:

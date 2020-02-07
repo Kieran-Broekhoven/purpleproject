@@ -9,7 +9,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/favicon/site.webmanifest' %}">
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -36,10 +40,37 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="about_info">
+                        <h3>Drive for Hope</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="about_info">
+                        <p>The Purple Project is hosting a donation drive at Bowls N Brews on February 15th.
+                        We will be gathering items from 11am-2pm. Items gathered at the drive will be distributed to emergency domestic violence 
+                        shelters in the greater San Diego area.</p>
+                        <br>
+                        <p>Bring a friend, bring an item and most importantly bring your support! If you are not able to make it to the donation drive please visit 
+                        our <a href="http://purple-project.org/wishlist/">wishlist</a> page. Items purchased off this wishlist are delivered 
+                        to shelters in need.</p>
+                   </div>
+                </div>
+            </div>
+            <div class="row" style="width: 100%">
+                <div class="col-10 offset-1">
+                    <img src="{% static 'img/flyer.png' %}" alt="" style="width: 100%"/>
+                </div>
+            </div>
+ 
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="about_info">
                         <h3>The Flip Side</h3>
                     </div>
                 </div>
             </div>
+ 
             <div class="row">
                 <div class="col-xl-12">
                     <div class="about_info">
@@ -59,6 +90,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
