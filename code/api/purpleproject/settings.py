@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$p(qrz^pc2ndzupg2ds#y#&da2qt%09c)90m!s@4pa^cu&8l%t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-local = socket.gethostname().startswith('Friday')
+local = socket.gethostname().lower().startswith('friday') or socket.gethostname().lower().startswith('desktop')
 DEBUG = local or os.environ.get('DEBUG', '').lower() == 'true'
 
 ALLOWED_HOSTS = ['*']
@@ -54,6 +54,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'purpleproject.urls'
 
+if local:
+    temp_dir = os.path.abspath(os.path.join(BASE_DIR, '..', 'html'))
+    stat_dir = os.path.abspath(os.path.join(BASE_DIR, '..', 'static'))
+else:
+    temp_dir = '/var/www/html'
+    stat_dir = '/var/www/static'
+
 # TEMPLATE_DIRS = (
 #     '/var/www/html/'
 # )
@@ -61,7 +68,7 @@ ROOT_URLCONF = 'purpleproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/var/www/html', '/var/www/static'],
+        'DIRS': [temp_dir, stat_dir],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,7 +141,7 @@ STATICFILES_DIRS = [
     # '/var/www/static/',
 ]
 if local:
-    STATICFILES_DIRS.append(os.path.join(BASE_DIR, "static"))
+    STATICFILES_DIRS.append(os.path.abspath(os.path.join(BASE_DIR, "..", "static")))
 
 STATIC_ROOT = "/var/www/static/"
 
