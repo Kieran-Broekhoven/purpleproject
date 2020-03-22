@@ -24,7 +24,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$p(qrz^pc2ndzupg2ds#y#&da2qt%09c)90m!s@4pa^cu&8l%t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-local = socket.gethostname().lower().startswith('friday') or socket.gethostname().lower().startswith('desktop')
+host = socket.gethostname().lower()
+local = host.startswith('friday') or host.startswith('desktop')
 DEBUG = local or os.environ.get('DEBUG', '').lower() == 'true'
 
 ALLOWED_HOSTS = ['*']
@@ -98,6 +99,8 @@ DATABASES = {
     }
 }
 
+if local and not host.startswith('friday'):
+    DATABASES = {}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
