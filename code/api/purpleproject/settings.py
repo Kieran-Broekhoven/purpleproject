@@ -25,7 +25,8 @@ SECRET_KEY = '$p(qrz^pc2ndzupg2ds#y#&da2qt%09c)90m!s@4pa^cu&8l%t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 host = socket.gethostname().lower()
-local = host.startswith('friday') or host.startswith('desktop')
+local = host.startswith('friday') or host.startswith('desktop') or host.startswith('lindsey')
+print("LOCAL: %s" % local)
 DEBUG = local or os.environ.get('DEBUG', '').lower() == 'true'
 
 ALLOWED_HOSTS = ['*']
