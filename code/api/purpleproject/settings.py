@@ -89,14 +89,14 @@ WSGI_APPLICATION = 'purpleproject.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'purpleproject',
-        'USER': os.environ.get('mysql_user', 'root'),
-        'PASSWORD': os.environ.get('mysql_pwd'),
-        'HOST': '34.94.241.217' if local else '127.0.0.1',
-        'PORT': 3306,
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'purpleproject',
+    #     'USER': os.environ.get('mysql_user', 'root'),
+    #     'PASSWORD': os.environ.get('mysql_pwd'),
+    #     'HOST': '34.94.241.217' if local else '127.0.0.1',
+    #     'PORT': 3306,
+    # }
 }
 
 if local and not host.startswith('friday'):
