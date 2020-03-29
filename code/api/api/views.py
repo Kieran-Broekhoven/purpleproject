@@ -75,7 +75,7 @@ def htmlPage(request, file):
     if not (file.endswith('.js') or file.endswith('.css') or file.endswith('.img') or file.endswith('.ico')):
         file += '.html'
     try:
-        if not (socket.gethostname().lower().startswith('friday') or socket.gethostname().lower().startswith('desktop')):
+        if not (socket.gethostname().lower().startswith('friday') or socket.gethostname().lower().startswith('desktop') or socket.gethostname().lower().startswith('lindsey')):
             file = '/var/www/html/' + file
         return render(request, file)
     except Exception as e:
