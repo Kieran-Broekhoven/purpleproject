@@ -2724,6 +2724,10 @@ h6 {
     background-color: #e66686
 }
 
+.gallery-item {
+    margin-bottom: 100px;
+}
+
 .single-gallery-image {
     margin-top: 30px;
     background-repeat: no-repeat !important;
