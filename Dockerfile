@@ -13,9 +13,12 @@ RUN python3.8 -m pip install --upgrade flask pprint django requests beautifulsou
     mysqlclient uWSGI Werkzeug uwsgi pyopenssl mysqlclient
 
 # COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY code/static/img/ /var/www/static/img/
+COPY code/static/fonts/ /var/www/static/fonts/
 COPY code/api/ /api
-RUN python3.8 /api/manage.py collectstatic --noinput
-ADD code/static /var/www/static/
+# RUN python3.8 /api/manage.py collectstatic --noinput
+COPY code/static/js/ /var/www/static/js/
+COPY code/static/css/ /var/www/static/css/
 # RUN chmod 777 /api/db.sqlite3
 COPY code/html/ /var/www/html/
 COPY code/html/ /usr/local/apache2/htdocs/
