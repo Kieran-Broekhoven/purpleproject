@@ -15,6 +15,7 @@ RUN python3.8 -m pip install --upgrade flask pprint django requests beautifulsou
 # COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY code/static/img/ /var/www/static/img/
 COPY code/static/fonts/ /var/www/static/fonts/
+COPY code/static/header.html /var/www/static/header.html
 COPY code/api/ /api
 # RUN python3.8 /api/manage.py collectstatic --noinput
 COPY code/static/js/ /var/www/static/js/

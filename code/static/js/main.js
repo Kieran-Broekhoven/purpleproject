@@ -13,7 +13,19 @@ $(window).on('scroll', function () {
 });
 
 $(document).ready(function(){
-  $("#headerArea").load('/static/header.html');
+  $("#headerArea").load('/static/header.html', function(){
+    let path = window.location.pathname.replace(new RegExp("^[/]+"), "").replace(new RegExp("[/]+$"), "");
+    if(!path){
+      path = 'index';
+    }
+    else if (path === 'info' || path === 'impact') {
+      path = 'menu';
+    }
+    console.log("Ready: ", path);
+    console.log('#'+path+'Tab');
+    console.log($('#'+path+'Tab').length);
+    $('#'+path+'Tab').addClass('active');
+  });
   // mobile_menu
   var menu = $('ul#navigation');
   if(menu.length){
