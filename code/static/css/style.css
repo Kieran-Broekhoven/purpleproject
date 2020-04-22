@@ -1,6 +1,73 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900|Roboto:300,300i,400,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900|Roboto:300,300i,400,500,700,900&display=swap");
 
+
+/* KIMS TO MERGE ONCE READY */
+.navbar-brand {
+    font-size:1.2em;
+    font-family: 'Playfair Display', serif;
+}
+.navbar-nav .nav-link {
+    color:rgba(255,255,255,.7);
+    font-size:1.05rem;
+    padding-bottom:.25rem;
+}
+
+/* KIMS CARDS FOR HOMEPAGE */
+.card-deck {
+    padding:60px 0px 150px 0px;
+}
+.card-title {
+    font-weight:bold;
+}
+.card {
+    border:none;
+    -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    padding-bottom:15px;
+}
+
+.card-img-top {
+    border-bottom:6px solid #4B0082;
+}
+.card-body button {
+    background-color:#4B0082;
+    color:#FFF;
+    border:none;
+    padding:9px 18px;
+    font-size:13px;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    
+}
+
+.card-body button:hover {
+    border:2px solid #4B0082;
+    background-color:#FFF;
+    color:#4B0082;
+    font-weight:500;
+        padding:9px 18px;
+}
+
+.intro-section {
+    margin-top:60px;
+    text-align:center;
+    justify-content:center;
+}
+.intro-section h2 {
+    font-weight:600;
+    text-align:center;
+    padding-bottom:15px;
+    font-size:3rem;
+}
+.intro-section .intro-p {
+    font-size:1.1em;
+    width:60%;
+    margin:0 15%;
+    display:block;
+}
+
+
 /**************** SHARED ***************/
 a,
 button {
@@ -156,7 +223,7 @@ p {
  
 /**************** INDEX *****************/
 .slider_area {
-    height: 1000px;
+    height: 740px;
     position: relative;
     z-index: 8;
     position: relative;
@@ -204,10 +271,11 @@ p {
     font-weight: 900;
     font-family: "Playfair Display", serif;
     font-size: 80px;
-    line-height: 90px;
+    line-height: 110px;
+    letter-spacing:0.025em;
     position: relative;
     z-index: 8;
-    text-transform: capitalize
+    padding-bottom:20px;
 }
 
 @media (max-width: 767px) {
@@ -238,13 +306,13 @@ p {
 }
 
 .slider_area .single_slider .slider_text p {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 20px;
     margin-top: 8px;
     padding-left: 0;
-    line-height: 32px
+    line-height: 2em;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -317,9 +385,7 @@ p {
     background-color: #4B0082;
     color: #4B0082;
 }
-.nav-item {
-    padding: 0 0 0 5px;
-}
+
 
 @media only screen and (min-width: 992px) {
     nav {
@@ -329,11 +395,24 @@ p {
         background: transparent
     }
     .nav-item {
-        padding: 35px 23px 35px 0px;
+        margin: 35px 30px 35px 0px;
     }
-    .nav-link:not(.active) {
-        color: white;
+    .active>.nav-link span {
+        color:#FFF;
+        border-bottom:1px solid #FFF;
+        padding-bottom:10px;
     }
+    .active>.nav-link span:hover {
+        border-bottom:1px solid #E7E3E0;
+        padding-bottom:10px;
+    }
+    .nav-link span:hover {
+        color:#E7E3E0;
+    }
+
+
+
+
     .wishlist-header {
         line-height: 1.0 !important;
         color: red;
@@ -348,31 +427,33 @@ p {
 }
 
 .header-area .donate_now {
-    text-align: right
+    padding-left:15px;
 }
 
+
 .header-area .donate_now a {
-    text-transform: capitalize;
-    font-display: 16px;
-    padding: 14px 44px;
-    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 20px;
+    letter-spacing: 0.13em;
     color: #fff;
     border-color: #fff;
     background: transparent;
-    color: #fff !important
+    color: #fff !important;
+    text-decoration:none;
 }
 
 .header-area .donate_now a:hover {
     background: #fff;
     border-color: #fff;
-    color: lightgrey !important
+    color: #4B0082 !important;
 }
 
 .boxed-btn {
     background: #fff;
     color: #4B0082;
     display: inline-block;
-    padding: 18px 44px;
+    margin-left:20px;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -380,7 +461,7 @@ p {
     border: 1px solid #4B0082;
     letter-spacing: 3px;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .boxed-btn:hover {
