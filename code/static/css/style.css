@@ -13,6 +13,18 @@
     padding-bottom:.25rem;
 }
 
+.dropdown-item:hover {
+    background-color:#4B0082;
+}
+.dropdown-menu {
+    margin-top:.7rem;
+    padding:0 0;
+    left:7px;
+    border:none;
+}
+.dropdown-item {
+    padding:10px 10px 10px 14px;
+}
 /* KIMS CARDS FOR HOMEPAGE */
 .card-deck {
     padding:60px 0px 150px 0px;
@@ -480,15 +492,15 @@ p {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    background-color: #4B0082;
+    background-color: #FFF;
 }
 
 .dropdown .dropdown-menu a {
-    color: white
+    color: #4B0082
 }
 
 .dropdown .dropdown-menu a:hover {
-    color: #4B0082
+    color: #FFF
 }
 
 .header-area .main-header-area.sticky {
