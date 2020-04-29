@@ -45,24 +45,24 @@
                 <div class="col-lg-8">
                     <form class="form-contact contact_form" action="contact_process.php" method="post" id="contact-form" novalidate="novalidate">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-6">
                                 <div class="form-group">
-                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message"></textarea>
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name*'" placeholder="Name*">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address*'" placeholder="Email Address*">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                    <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject Line*'" placeholder="Subject Line*">
+                                </div>
+                            </div>
+                             <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comments/Questions'" placeholder="Comments/Questions"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -75,23 +75,22 @@
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="fa fa-home"></i></span>
                         <div class="media-body">
-                            <h3>3911 Cleveland Avenue</h3>
-                            <p>P.O. Box 34173</p>
-                            <h3>San Diego, California</h3>
-                            <p>92103/92163</p>
+                            <p>3911 Cleveland Avenue<br>
+                            P.O. Box 34173<br>
+                            San Diego, California<br>
+                                92103/92163</p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
                         <div class="media-body">
-                            <h3>(619) 724 2339</h3>
+                            <p><a href="tel:6197242339">(619) 724-2339</a></p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <a href="mailto: info@purple-project.org"><span class="contact-info__icon"><i class="fa fa-envelope"></i></span></a>
                         <div class="media-body">
-                            <h3>info@purple-project.org</h3>
-                            <p>Send us an email!</p>
+                            <p><a href="mailto:info@purple-project.org">info@purple-project.org</a></p>
                         </div>
                     </div>
                     <div class="media contact-info">
@@ -102,7 +101,7 @@
                             </a>
                         </span>
                         <div class="media-body">
-                            <h3>@wearethepurpleproject</h3>
+                            <p style="color:#4B0082;">@<a href="https://www.facebook.com/wearethepurpleproject/">wearethepurpleproject</a></p>
                         </div> 
                     </div>
                     <div class="media contact-info">
@@ -112,7 +111,7 @@
                             </a>
                         </span>
                         <div class="media-body">
-                            <h3>@wearethepurpleproject</h3>
+                            <p style="color:#4B0082;">@<a href="https://www.instagram.com/wearethepurpleproject/">wearethepurpleproject</a></p>
                         </div> 
                     </div>
                 </div>
