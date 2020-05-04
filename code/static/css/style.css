@@ -375,6 +375,22 @@ p {
 }
 
 /**** KIMS VIDEO TEST ****/
+@media (max-width: 992px) {
+    .driveInfo {
+        display: none;
+    }
+    .latest-event-video .video_activate {
+        width:100%;
+    }
+}
+@media (min-width: 993px) {
+    .latest-event-video .video_activate {
+        width:60%;
+    }
+}
+.expore-header {
+    font-size: 38px;
+}
 .explore-grid h4 {
     font-weight:600;
     line-height:1.3;
@@ -387,8 +403,8 @@ p {
     position:absolute;
     top:0;
     left:0;
-    width:60%;
     bottom:0;
+    z-index: 999;
 }
 .video_bg_1 {
     background-image:url(../img/video-background-img-3.png);

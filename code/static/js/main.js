@@ -21,9 +21,6 @@ $(document).ready(function(){
     else if (path === 'info' || path === 'impact') {
       path = 'menu';
     }
-    console.log("Ready: ", path);
-    console.log('#'+path+'Tab');
-    console.log($('#'+path+'Tab').length);
     $('#'+path+'Tab').addClass('active');
   });
   // mobile_menu
