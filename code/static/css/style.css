@@ -404,7 +404,7 @@ p {
     top:0;
     left:0;
     bottom:0;
-    z-index: 999;
+    z-index: 99;
 }
 .video_bg_1 {
     background-image:url(../img/video-background-img-3.png);
