@@ -247,6 +247,30 @@ p {
     background-image: url(../img/banner/butterflies.jpg);
 }
 
+.info-header {
+    font-size: 88px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .info-header {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .info-header {
+        font-size: 8vw
+    }
+}
+
+@media (max-width: 767px) {
+    .bradcam_bg {
+        background-image: url(../img/banner/butterflies.jpg);
+    }
+}
+
+
 .sample-text-area {
     background: #fff;
     padding: 20px 0 0 0;
@@ -869,4 +893,10 @@ background-color:#FFF;
 .contact-info .media-body p {
     color: #8f9195;
     margin-bottom: 0;
+}
+
+@media (min-width: 767px) {
+    .mobOnly {
+        display: none !important;
+    }
 }

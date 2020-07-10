@@ -1,5 +1,6 @@
 (function ($) {
 "use strict";
+
 // TOP Menu Sticky
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
@@ -32,6 +33,14 @@ $(document).ready(function(){
       openedSymbol:'-'
     });
   };
+  // $('#donateBtn').on('click', function(){
+  //   console.log('SUBMIT!');
+  //   $('#donateForm').submit();
+  //   console.log("Submitted");
+  // });
+  // $('#donateBtn').click(function(){
+  //   $('#donateForm').submit();
+  // })
   // $("#headerVideoLink").on("click", function(e) {
   //   e.preventDefault();
   //   var $this = $(this);
@@ -54,10 +63,10 @@ $(document).ready(function(){
   // $(".popup > iframe").on("click", function(e) {
   //     e.stopPropagation();
   // });
-  $('#headerVideoLink').magnificPopup({
-    type:'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  });         
+  // $('#headerVideoLink').magnificPopup({
+  //   type:'inline',
+  //   midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  // });         
 });
    
 })(jQuery);	

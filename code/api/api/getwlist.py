@@ -10,11 +10,14 @@ def get_wishlist(wishlist_id):
     with SimpleBrowser.session() as b:
         loc = 'https://www.amazon.com/hz/wishlist/ls/%s' % wishlist_id
         b.load(loc)
+        print("Loaded")
         s = str(b.soup)
         s = divider + s.split(divider)[-1]
         s = BeautifulSoup(s, "html.parser")
         divs = s.findAll("div", {"id": re.compile('^itemImage_')})
+        print("Divs: %s" % len(divs))
         for div in divs:
+            print("DIV?")
             img = div.find("img")['src']
             span = div.find('a')['title']
             link = 'https://www.amazon.com/' + div.find('a')['href'].lstrip('/')
