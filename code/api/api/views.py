@@ -11,6 +11,7 @@ from email.mime.text import MIMEText
 from pprint import pprint
 
 from api.getwlist import get_wishlist
+from purpleproject import settings
 
 cached_wishlist = []
 last_cache = None
@@ -72,16 +73,39 @@ def wishlist(request):
 
 
 def htmlPage(request, file):
-    if not (file.endswith('.js') or file.endswith('.css') or file.endswith('.img') or file.endswith('.ico')):
+#    if not (file.endswith('.js') or file.endswith('.css') or file.endswith('.img') or file.endswith('.ico')):
+    if any([file.endswith('.'+ext) for ext in ['js', 'css', 'img', 'ico', 'png', 'jpg', 'jpeg']]):
+        if file.endswith('.ico'):
+            path = os.path.join(settings.STATIC_ROOT, 'img', 'favicon', file)
+        else:
+            path = os.path.join(settings.STATIC_ROOT, file)
+        test_file = open(path, 'rb')
+        response = HttpResponse(content=test_file)
+        if file.endswith('css'):
+            response['Content-Type'] = 'text/css'
+        elif file.endswith('js'):
+            response['Content-Type'] = 'application/javascript'
+        elif file.endswith('jpeg') or file.endswith('jpg'):
+            response['Content-Type'] = 'image/jpeg'
+        elif file.endswith('png'):
+            response['Content-Type'] = 'image/png'
+        elif file.endswith('ico'):
+            response['Content-Type'] = 'image/x-icon'
+        return response
+
+    if file.endswith('map'):
+        return HttpResponse('Not found', status=404)
+
+    if not file.endswith('html'):
         file += '.html'
+    print(file)
     try:
-        if not (socket.gethostname().lower().startswith('friday') or socket.gethostname().lower().startswith('desktop') or socket.gethostname().lower().startswith('lindsey')):
-            file = '/var/www/html/' + file
+        #if not (socket.gethostname().lower().startswith('friday') or socket.gethostname().lower().startswith('desktop') or socket.gethostname().lower().startswith('lindsey')):
+        #    file = os.path.realpath(os.path.join(settings.BASE_DIR, '../html', file))
         return render(request, file)
     except Exception as e:
         print("E: %s" % str(e))
         return HttpResponse('Not found', status=404)
-
 
 # temp_views = {}
 

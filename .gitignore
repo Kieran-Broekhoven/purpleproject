@@ -4,3 +4,4 @@ old/
 ignore/
 __pycache__/
 credentials/
+code/api/tmp

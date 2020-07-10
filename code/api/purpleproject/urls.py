@@ -25,6 +25,7 @@ urlpatterns = [
     path('api/', include('api.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+urlpatterns.append(path('static/<path:file>', views.htmlPage))
 urlpatterns.append(path('<str:file>/', views.htmlPage))
 # HTML pages:
 # for page in views.pages:
