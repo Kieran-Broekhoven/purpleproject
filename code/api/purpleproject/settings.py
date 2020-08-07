@@ -150,8 +150,8 @@ print(STATICFILES_DIRS)
 #if local:
 #STATICFILES_DIRS.append(os.path.abspath(os.path.join(BASE_DIR, "..", "static")))
 
-#STATIC_ROOT = "/var/www/static/"
-STATIC_ROOT = stat_dir
+STATIC_ROOT = "/var/www/static/"
+#STATIC_ROOT = stat_dir
 print("ROOT: %s" % STATIC_ROOT)
 
 LOGGING = {
