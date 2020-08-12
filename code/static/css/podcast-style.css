@@ -72,6 +72,14 @@ padding-top: 35px;
 margin-top: -30px;
 }
 
+.card {
+    box-shadow: 10px 10px 0 0 #1D0A2D, 12px 12px 32px 0px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0;
+}
+.card-img-top {
+ border-radius:0 !important;   
+}
+
 p a, h3 a {
     color:#4B0082;
     text-decoration:none;
@@ -121,17 +129,17 @@ a.button:hover {
 }
 .card-title {
     font-weight:bold;
+    font-size:20px !important;
 }
 .card {
     border:none;
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     padding-bottom:15px;
+    border-radius:0;
 }
 
-.card-img-top {
-    border-bottom:6px solid #4B0082;
-}
+
 .card-body button, .button, .form-group button {
     background-color:#4B0082;
     color:#FFF !important;
@@ -356,9 +364,7 @@ p {
 .slider_area {
     height: 740px;
     position: relative;
-    z-index: 8;
-    position: relative;
-    z-index: 8;
+    z-index: 1;
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -394,7 +400,7 @@ p {
 
 .slider_area .single_slider {
     position: relative;
-    z-index: 8
+    z-index: 1;
 }
 
 .slider_area .single_slider .slider_text h3 {
@@ -405,7 +411,7 @@ p {
     line-height: 110px;
     letter-spacing:0.025em;
     position: relative;
-    z-index: 8;
+    z-index: 1;
     padding-bottom:20px;
 }
 
@@ -465,7 +471,10 @@ p {
 }
 
 .slider_bg_1 {
-    background-image: url(../img/chalkboards.jpg)
+    background-image: url(../img/chalkboards.jpg);
+}
+.slider_bg_podcast {
+    background-image: url(../img/podcast/podcast-hero-4.jpg);
 }
 
 /**** KIMS VIDEO TEST ****/
