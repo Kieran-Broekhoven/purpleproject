@@ -109,7 +109,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+    $(window).on('scroll', function () {
+	var scroll = $(window).scrollTop();
+	if (scroll < 100) {
+    $("#sticky-header").removeClass("sticky");
+    $('#back-top').fadeIn(500);
+	} else {
+    $("#sticky-header").addClass("sticky");
+    $('#back-top').fadeIn(500);
+	}
+});
+
+$(document).ready(function(){
+  $("#headerArea").load('/static/podcast-header.html', function(){
+    let path = window.location.pathname.replace(new RegExp("^[/]+"), "").replace(new RegExp("[/]+$"), "");
+    if(!path){
+      path = 'index';
+    }
+    else if (path === 'info' || path === 'impact') {
+      path = 'menu';
+    }
+    $('#'+path+'Tab').addClass('active');
+  });
+  // mobile_menu
+  var menu = $('ul#navigation');
+  if(menu.length){
+    menu.slicknav({
+      prependTo: ".mobile_menu",
+      closedSymbol: '+',
+      openedSymbol:'-'
+    });
+  };
+     
+});
+    </script>
 
 </body>
 

@@ -42,7 +42,7 @@ color: #231F20;
 box-sizing: border-box;
 position: relative;
 top: -140px;
-border-top: 5px solid #DFDFDF;
+border-top: 5px solid #d9e254;
 box-shadow: 10px 10px 0 0 #1D0A2D, 12px 12px 32px 0px rgba(0, 0, 0, 0.2) !important;
 background-color: #FFFFFF;
 line-height: 1;
@@ -77,7 +77,8 @@ margin-top: -30px;
     border-radius: 0;
 }
 .card-img-top {
- border-radius:0 !important;   
+ border-radius:0 !important;
+    border-top:6px solid #d9e254;
 }
 
 p a, h3 a {
@@ -404,7 +405,7 @@ p {
 }
 
 .slider_area .single_slider .slider_text h3 {
-    color: #ffffff;
+    color: #d9e254;
     font-weight: 900;
     font-family: "Playfair Display", serif;
     font-size: 80px;
@@ -493,6 +494,7 @@ p {
 }
 .expore-header {
     font-size: 38px;
+    background:linear-gradient(to bottom, #fff 50%, #d9e254 50%);
 }
 .explore-grid h4 {
     font-weight:600;
@@ -587,7 +589,7 @@ background-color:#FFF;
 
 /*************** HEADER *****************/
 .navbar .nav-item>a {
-    color: #d2c1df !important;
+    color: #fff !important;
 }
 
 .header-area {
@@ -595,7 +597,7 @@ background-color:#FFF;
     left: 0;
     right: 0;
     top: 0;
-    background: transparent;
+    background: #1D0A2D;
     z-index: 999
 }
 
@@ -633,7 +635,9 @@ background-color:#FFF;
         padding: 0 50px
     }
 }
-
+.mr-2, .mx-2 {
+    margin-right: .4rem!important;
+}
 .navbar-toggler {
     color: white !important;
     border-color: white !important;
@@ -662,10 +666,10 @@ background-color:#FFF;
 }
 
 .navbar .navbar-brand>img {
-    width: 49px;
+    width: 54px;
 }
 .navbar .navbar-brand>span>img {
-    width: 105px;
+    width: 110px;
 }
 
 
@@ -674,20 +678,20 @@ background-color:#FFF;
         padding-left: 10px !important;
     }
     .navbar .navbar-brand>img {
-        width: 40px;
+        width: 54px;
     }
     .navbar .navbar-brand>span>img {
-        width: 84px;
+        width: 110px;
     }
 
 }
 
 @media only screen and (min-width: 768px) {
     nav {
-        background: transparent;
+        background: #1D0A2D;
     }
     .navbar-collapse {
-        background: transparent
+        background: #1D0A2D;
     }
     .nav-item {
         margin: 35px 30px 35px 0px;
@@ -718,7 +722,7 @@ background-color:#FFF;
     letter-spacing: 0.13em;
     color: #fff;
     border-color: #fff;
-    background: transparent;
+    background: #1D0A2D;
     color: #fff !important;
     text-decoration:none;
 }
@@ -783,7 +787,7 @@ background-color:#FFF;
     -webkit-transition: transform 500ms ease, background 500ms ease;
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
     padding: 0 150px;
-    background: #4B0082
+    background: #1D0A2D;
 }
 
 .slider-area a {
