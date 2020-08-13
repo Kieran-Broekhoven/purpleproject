@@ -2,6 +2,7 @@ import os
 import smtplib
 import socket
 import time
+import traceback
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 # from django.templates.exceptions import TemplateDeosNotExist
@@ -105,7 +106,21 @@ def htmlPage(request, file):
         return render(request, file)
     except Exception as e:
         print("E: %s" % str(e))
+        traceback.print_exc()
         return HttpResponse('Not found', status=404)
+
+def staticPage(request, file):
+    #if not (file.endswith('.js') or file.endswith('.css') or file.endswith('.img') or file.endswith('.ico')):
+    #    file += '.html'
+    try:
+        #if not (socket.gethostname().lower().startswith('friday') or socket.gethostname().lower().startswith('desktop') or socket.gethostname().lower().startswith('lindsey')):
+        #    file = os.path.realpath(os.path.join(settings.BASE_DIR, '../html', file))
+        return render(request, file)
+    except Exception as e:
+        print("E: %s" % str(e))
+        traceback.print_exc()
+        return HttpResponse('Not found', status=404)
+
 
 # temp_views = {}
 

@@ -56,12 +56,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'purpleproject.urls'
 
-#if local:
-temp_dir = os.path.abspath(os.path.join(BASE_DIR, '..', 'html'))
-stat_dir = os.path.abspath(os.path.join(BASE_DIR, '..', 'static'))
-#else:
-#    temp_dir = '/var/www/html'
-#    stat_dir = '/var/www/static'
+if local:
+    temp_dir = os.path.abspath(os.path.join(BASE_DIR, '..', 'html'))
+    stat_dir = os.path.abspath(os.path.join(BASE_DIR, '..', 'static'))
+else:
+    temp_dir = '/var/www/html'
+    stat_dir = '/var/www/static'
 
 # TEMPLATE_DIRS = (
 #     '/var/www/html/'
@@ -150,8 +150,11 @@ print(STATICFILES_DIRS)
 #if local:
 #STATICFILES_DIRS.append(os.path.abspath(os.path.join(BASE_DIR, "..", "static")))
 
-STATIC_ROOT = "/var/www/static/"
-#STATIC_ROOT = stat_dir
+#STATIC_ROOT = "/var/www/static/"
+if local:
+    STATIC_ROOT = ''
+else:
+    STATIC_ROOT = stat_dir
 print("ROOT: %s" % STATIC_ROOT)
 
 LOGGING = {
