@@ -1,7 +1,7 @@
-.DS_Store
-about.html
-old/
-ignore/
-__pycache__/
-credentials/
-code/api/tmp
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+**/__pycache__
+**/.DS_Store
