@@ -44,7 +44,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="sample-text-area">
-      <div class="container">
+      <div class="container" style="padding-bottom: 30px">
+          <div class="text-center" style="padding-bottom: 30px">
+            <a target="none" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCLTLLWHKT32G&source=url"
+                id="supportDonateBtn" class="btn btn-outline-primary btn-lg text-center" role="button" aria-disabled="true">Donate to The Purple Project</a>
+          </div>
           <div class="row">
             <div class="col-md-6">
               <div id="swCarouselControls" class="carousel slide col-md-8 offset-md-2" data-ride="carousel">
@@ -73,15 +77,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-
             </div>
             <div class="col-md-6">
               <h3 class="text-center">Purchase a Purple Project water bottle</h3>
-              <h5 class="text-center">$40 + $10 shipping</h5>
+              <h5 class="text-center">$40 + $10 shipping & handling</h5>
               <div class="w-100 align-self-center paypalDiv" id="flask-button-container"></div>
-              <h3 class="text-center" id="orBtn">OR</h3>
-              <a target="none" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCLTLLWHKT32G&source=url"
-                 id="supportDonateBtn" class="btn btn-outline-primary btn-lg btn-block" role="button" aria-disabled="true">Donate to The Purple Project</a>
+              <!-- <h3 class="text-center" id="orBtn">OR</h3> -->
+              <!-- <div class="text-center" id="donate-btn-container"> -->
+                <!-- <a href="#" id="supportDonateBtn" class="btn btn-outline-primary" role="button" aria-disabled="true">Donate</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img src="static/img/book.png" class="w-50">
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-center">Purchase the Purple Project Children's Book</h3>
+              <h5 class="text-center">$14.99 + $6.50 shipping & handling</h5>
+              <div class="w-100 align-self-center paypalDiv" id="book-button-container"></div>
+              <!-- <h3 class="text-center" id="orBtn">OR</h3> -->
+              <!-- <a target="none" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCLTLLWHKT32G&source=url"
+                 id="supportDonateBtn" class="btn btn-outline-primary btn-lg btn-block" role="button" aria-disabled="true">Donate to The Purple Project</a> -->
               <!-- <div class="text-center" id="donate-btn-container"> -->
                 <!-- <a href="#" id="supportDonateBtn" class="btn btn-outline-primary" role="button" aria-disabled="true">Donate</a> -->
               </div>
@@ -131,6 +150,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               });
           }
       }).render('#flask-button-container');
+      paypal.Buttons({
+          style: {
+              shape: 'pill',
+              color: 'white',
+              layout: 'vertical',
+              label: 'paypal',
+          },
+          createOrder: function(data, actions) {
+              return actions.order.create({
+                  purchase_units: [{
+                      amount: {
+                          value: '25.99'
+                      }
+                  }]
+              });
+          },
+          onApprove: function(data, actions) {
+              return actions.order.capture().then(function(details) {
+                  alert('Thank you for your purchase!');
+              });
+          }
+      }).render('#book-button-container');
+
       // paypal.Buttons().render('#donate-btn-container');
  
       // paypal.Buttons({
