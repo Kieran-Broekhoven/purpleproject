@@ -15,7 +15,11 @@ $(window).on('scroll', function () {
 
 $(document).ready(function(){
   $("#headerArea").load('/static/header.html', function(){
-    let path = window.location.pathname.replace(new RegExp("^[/]+"), "").replace(new RegExp("[/]+$"), "");
+    console.log("PATHNAME: ", window.location.pathname);
+    const split = window.location.pathname.split('/');
+    const end = split[split.length-1];
+    let path = end.replace(new RegExp("\.html$"), "").replace(new RegExp("^[/]+"), "").replace(new RegExp("[/]+$"), "");
+    console.log("PATH: ", path);
     if(!path){
       path = 'index';
     }
