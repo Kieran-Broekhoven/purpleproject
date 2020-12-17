@@ -145,7 +145,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $('#book-button-container').empty();
         if(quantity == 0)
           return;
-        const val = 34.81 + (26.81*(quantity-1));
+        const val = (34.81 + (26.81*(quantity-1))).toFixed(2);
+        console.log("Cost: " + val);
         paypal.Buttons({
             style: {
                 shape: 'pill',
