@@ -51,7 +51,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="col-md-6">
               <h3 class="text-center">Purchase the Purple Project Children's Book</h3>
-              <h5 class="text-center">$25 + $8 shipping (only available in US)</h5>
+              <h5 class="text-center">$25 + $10 shipping (only available in US)</h5>
               <label for="qInput">Order quantity</label>
               <input onchange="quantityChanged()" value="1" type="number" class="form-control" id="qInput" placeholder="Enter quantity">
               <div class="w-100 align-self-center paypalDiv" id="book-button-container"></div>
@@ -154,7 +154,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           return;
         }
         console.log('Calc cal');
-        const val = (34.81 + (26.81*(quantity-1))).toFixed(2);
+        const val = (36.81 + (26.81*(quantity-1))).toFixed(2);
         console.log("Cost: " + val);
         paypal.Buttons({
             style: {
