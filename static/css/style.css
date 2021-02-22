@@ -994,3 +994,9 @@ background-color:#FFF;
 .plist p {
     margin: 0;
 }
+.programs {
+    color: black;
+    text-align: justify;
+    font-family: Montserrat;
+    font-weight:normal;
+}
