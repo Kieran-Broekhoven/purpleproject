@@ -996,11 +996,15 @@ background-color:#FFF;
 }
 .programs {
     color: black;
-    text-align: justify;
     font-family: Montserrat;
     font-weight:normal;
 }
 .ourimpact a {
     font-weight: bold;
     color: #4B0082;
+}
+@media (min-width: 767px) {
+    .programs {
+        text-align: justify;
+    }
 }
