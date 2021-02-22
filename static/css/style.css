@@ -1000,3 +1000,7 @@ background-color:#FFF;
     font-family: Montserrat;
     font-weight:normal;
 }
+.ourimpact a {
+    font-weight: bold;
+    color: #4B0082;
+}
