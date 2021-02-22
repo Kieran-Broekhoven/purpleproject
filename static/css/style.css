@@ -991,3 +991,6 @@ background-color:#FFF;
     margin-top: 20px;
     margin-bottom: 40px;
 }
+.plist p {
+    margin: 0;
+}
