@@ -1008,3 +1008,16 @@ background-color:#FFF;
         text-align: justify;
     }
 }
+@media (min-width: 767px) {
+    .literacyimgmob {
+        display: none !important;
+    }
+}
+@media (max-width: 767px) {
+    .breadcam_area {
+        padding: 160px 0
+    }
+    .literacyimg {
+        display: none !important;
+    }
+}
