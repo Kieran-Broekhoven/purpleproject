@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a target="none" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SCLTLLWHKT32G&source=url"
                 id="supportDonateBtn" class="btn btn-outline-primary btn-lg text-center" role="button" aria-disabled="true">Donate to The Purple Project</a>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-6">
               <div id="swCarouselControls" class="carousel slide col-md-8 offset-md-2" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -107,11 +107,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h3 class="text-center">Purchase a Purple Project water bottle</h3>
               <h5 class="text-center">$50 including shipping (only available in US)</h5>
               <div class="w-100 align-self-center paypalDiv" id="flask-button-container"></div>
-              <!-- <h3 class="text-center" id="orBtn">OR</h3> -->
-              <!-- <div class="text-center" id="donate-btn-container"> -->
-                <!-- <a href="#" id="supportDonateBtn" class="btn btn-outline-primary" role="button" aria-disabled="true">Donate</a> -->
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
     </div>
@@ -179,28 +176,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
         }).render('#book-button-container');
       }
-      paypal.Buttons({
-          style: {
-              shape: 'pill',
-              color: 'white',
-              layout: 'vertical',
-              label: 'paypal',
-          },
-          createOrder: function(data, actions) {
-              return actions.order.create({
-                  purchase_units: [{
-                      amount: {
-                          value: '50'
-                      }
-                  }]
-              });
-          },
-          onApprove: function(data, actions) {
-              return actions.order.capture().then(function(details) {
-                  alert('Thank you for your purchase!');
-              });
-          }
-      }).render('#flask-button-container');
+      // paypal.Buttons({
+      //     style: {
+      //         shape: 'pill',
+      //         color: 'white',
+      //         layout: 'vertical',
+      //         label: 'paypal',
+      //     },
+      //     createOrder: function(data, actions) {
+      //         return actions.order.create({
+      //             purchase_units: [{
+      //                 amount: {
+      //                     value: '50'
+      //                 }
+      //             }]
+      //         });
+      //     },
+      //     onApprove: function(data, actions) {
+      //         return actions.order.capture().then(function(details) {
+      //             alert('Thank you for your purchase!');
+      //         });
+      //     }
+      // }).render('#flask-button-container');
       rendBooks(1);
       // paypal.Buttons().render('#donate-btn-container');
  
