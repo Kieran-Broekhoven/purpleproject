@@ -241,9 +241,17 @@ p {
     color: white;
 }
 
+@media (min-width: 767px) {
+    .literacyimgmob {
+        display: none !important;
+    }
+}
 @media (max-width: 767px) {
     .breadcam_area {
         padding: 160px 0
+    }
+    .literacyimg {
+        display: none !important;
     }
 }
 
@@ -990,4 +998,8 @@ background-color:#FFF;
 #orBtn {
     margin-top: 20px;
     margin-bottom: 40px;
+}
+.plist p {
+    margin: 0;
+    color: green !important;
 }
