@@ -28,6 +28,7 @@ $(document).ready(function(){
     }
     $('#'+path+'Tab').addClass('active');
   });
+  $("#footerArea").load('/footer.html');
   // mobile_menu
   var menu = $('ul#navigation');
   if(menu.length){
